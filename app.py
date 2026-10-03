@@ -17,8 +17,7 @@ st.set_page_config(page_title='Dhaga & Co. | Returns', page_icon='🧵', layout=
 st.title('Dhaga & Co. · Returns Reason Classifier')
 st.caption('Turn customer comments into evidence for your next category review.')
 
-with st.sidebar:
-    st.header('Run setup')
+with st.expander('Run setup', expanded=False):
     configured_key = os.getenv('OPENROUTER_API_KEY', '')
     try:
         configured_key = configured_key or st.secrets.get('OPENROUTER_API_KEY', '')

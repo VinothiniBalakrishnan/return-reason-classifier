@@ -90,7 +90,7 @@ class Settings:
 
     def validate(self):
         if not self.api_key.strip():
-            raise ValueError('Add OPENROUTER_API_KEY to .env or enter your key in the sidebar.')
+            raise ValueError('Add OPENROUTER_API_KEY to .env or enter your key in Run setup.')
         if not self.small_model.strip() or not self.strong_model.strip():
             raise ValueError('Both model IDs are required.')
         if self.small_model == self.strong_model:

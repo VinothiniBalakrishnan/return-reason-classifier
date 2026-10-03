@@ -19,7 +19,7 @@ The sample is explicitly synthetic and temporary. The teammate's CSV has not bee
 
 ## Interface and operating limits
 
-Three tabs: Analyze returns, Review, Try a comment. The sidebar contains setup status and model IDs. API-backed operations require an explicit Run button. Session state preserves results across ordinary reruns; changing uploaded input invalidates the batch result. No shared/global cache of customer results or keys. Downloads are escaped against spreadsheet formula injection.
+Three tabs: Analyze returns, Review, Try a comment. A collapsed Run setup section on the main page contains setup status, model IDs and operating settings. No left sidebar is rendered. API-backed operations require an explicit Run button. Session state preserves results across ordinary reruns; changing uploaded input invalidates the batch result. No shared/global cache of customer results or keys. Downloads are escaped against spreadsheet formula injection.
 
 Default to the first 25 rows with a subset selector up to 1,000 rows. A Process all rows checkbox bypasses the subset limit and processes the entire validated file. Accepted file maximum: 10 MB and 10,000 rows. Show total and completed row counts. Up to four worker threads, per-request timeout 45 seconds, one transient retry (SDK retries disabled). Configuration is validated before requests. No real key means a setup message, never fabricated model output. Sample preview works without credentials.
 
