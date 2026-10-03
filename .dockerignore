@@ -1,0 +1,10 @@
+.venv
+.env
+.env.*
+.git
+.agents
+.codex
+.aws
+.streamlit
+__pycache__
+tests

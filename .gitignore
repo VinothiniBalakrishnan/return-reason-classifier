@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.pytest_cache/
+evaluation_results.csv

@@ -1,0 +1,8 @@
+streamlit==1.64.0
+langchain-core==1.6.6
+langchain-openrouter==0.2.9
+pydantic==2.12.5
+pandas==2.3.3
+python-dotenv==1.2.4
+openrouter==0.11.46
+httpx==0.28.1
